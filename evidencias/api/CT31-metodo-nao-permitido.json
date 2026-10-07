@@ -1,0 +1,16 @@
+{
+  "executadoEm": "2026-10-06T16:18:07.346Z",
+  "requisicao": {
+    "metodo": "DELETE",
+    "rota": "/api/produtos"
+  },
+  "resposta": {
+    "status": 405,
+    "corpo": {
+      "erro": {
+        "codigo": "METODO_NAO_PERMITIDO",
+        "mensagem": "O método DELETE não é permitido nesta rota."
+      }
+    }
+  }
+}

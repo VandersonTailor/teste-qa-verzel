@@ -1,0 +1,48 @@
+{
+  "executadoEm": "2026-10-06T16:18:07.164Z",
+  "requisicao": {
+    "metodo": "POST",
+    "rota": "/api/pedidos",
+    "corpo": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P008",
+          "quantidade": 4
+        }
+      ]
+    }
+  },
+  "resposta": {
+    "status": 201,
+    "corpo": {
+      "numero": "VZ-633703",
+      "criadoEm": "2026-10-06T16:18:07.367Z",
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310100"
+      },
+      "itens": [
+        {
+          "produtoId": "P008",
+          "nome": "Garrafa Térmica 750ml",
+          "precoUnitario": 50,
+          "quantidade": 4,
+          "total": 200
+        }
+      ],
+      "subtotal": 200,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 0,
+      "total": 219.9,
+      "cupom": null
+    }
+  }
+}

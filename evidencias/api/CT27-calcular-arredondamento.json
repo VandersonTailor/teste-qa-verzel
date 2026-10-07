@@ -1,0 +1,52 @@
+{
+  "executadoEm": "2026-10-06T16:18:07.305Z",
+  "requisicao": {
+    "metodo": "POST",
+    "rota": "/api/carrinho/calcular",
+    "corpo": {
+      "itens": [
+        {
+          "produtoId": "P005",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P007",
+          "quantidade": 5
+        }
+      ],
+      "cupom": "BEMVINDO10"
+    }
+  },
+  "resposta": {
+    "status": 200,
+    "corpo": {
+      "itens": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 5,
+          "total": 500
+        },
+        {
+          "produtoId": "P007",
+          "nome": "Jaqueta Corta-Vento",
+          "precoUnitario": 229.9,
+          "quantidade": 5,
+          "total": 1149.5
+        }
+      ],
+      "subtotal": 1649.5,
+      "desconto": 164.95,
+      "frete": 0,
+      "freteGratis": true,
+      "valorFaltanteFreteGratis": 0,
+      "total": 1484.55,
+      "cupom": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      }
+    }
+  }
+}

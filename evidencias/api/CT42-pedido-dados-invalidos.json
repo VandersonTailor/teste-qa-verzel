@@ -1,0 +1,43 @@
+{
+  "executadoEm": "2026-10-06T16:18:07.482Z",
+  "requisicao": {
+    "metodo": "POST",
+    "rota": "/api/pedidos",
+    "corpo": {
+      "cliente": {
+        "nome": "Maria",
+        "email": "maria@",
+        "cep": "0131010"
+      },
+      "itens": [
+        {
+          "produtoId": "P001",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "resposta": {
+    "status": 422,
+    "corpo": {
+      "erro": {
+        "codigo": "DADOS_INVALIDOS",
+        "mensagem": "Existem campos inválidos no pedido.",
+        "campos": [
+          {
+            "campo": "cliente.nome",
+            "mensagem": "Informe nome e sobrenome."
+          },
+          {
+            "campo": "cliente.email",
+            "mensagem": "Informe um e-mail válido."
+          },
+          {
+            "campo": "cliente.cep",
+            "mensagem": "Informe um CEP com 8 dígitos."
+          }
+        ]
+      }
+    }
+  }
+}
