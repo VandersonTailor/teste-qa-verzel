@@ -49,8 +49,8 @@ Validação da entrega **VZS-142 v2.3.0** da [Verzel Store](https://verzel-store
 **Pré-requisitos:** Node.js 18 ou mais novo (testado com 20.19) e npm.
 
 ```bash
-git clone <url-deste-repositorio>
-cd <pasta-do-repositorio>
+git clone https://github.com/VandersonTailor/teste-qa-verzel.git
+cd teste-qa-verzel
 npm install
 npx playwright install chromium
 ```
